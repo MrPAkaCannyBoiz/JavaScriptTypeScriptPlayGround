@@ -1,0 +1,70 @@
+:root {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f5f5f5;
+}
+
+.app {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  width: min(92vw, 380px);
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.status {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+  min-height: 1.3rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cell {
+  aspect-ratio: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 700;
+  background: #fff;
+  cursor: pointer;
+}
+
+.cell:disabled {
+  cursor: default;
+  color: #333;
+  background: #fafafa;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.reset {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #111827;
+  color: #fff;
+}
